@@ -1,2 +1,7 @@
 # Credentials and Secrets
 secrets/
+venv/
+__pycache__/
+*.pyc
+.venv/
+inventory.yaml
