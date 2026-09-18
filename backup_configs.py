@@ -59,7 +59,7 @@ def backup_device(device, username, password):
 
     BACKUP_DIR.mkdir(exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    filename = BACKUP_DIR / f"{device['name']}_{timestamp}.cfg"
+    filename = BACKUP_DIR / f"{device['name']}.cfg"
     filename.write_text(output)
     print(f"  Saved -> {filename}")
     return True
